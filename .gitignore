@@ -1,0 +1,6 @@
+.DS_*
+*.sw*
+.pyc
+notes.md
+__pycache/
+__pycache__/
