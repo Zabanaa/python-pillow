@@ -1,6 +1,13 @@
+.Python
+*.pyc
+*.jpg
+lib
+include
 .DS_*
 *.sw*
 .pyc
 notes.md
 __pycache/
 __pycache__/
+bin/
+env/
