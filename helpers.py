@@ -2,7 +2,7 @@ from PIL import Image
 from PIL.ExifTags import TAGS
 
 def open_image(path):
-    img = Image.open(path) 
+    img = Image.open(path)
     return img
 
 def get_exif_data(img_obj):
@@ -36,7 +36,16 @@ def get_gps_info(exifData):
         print("Sorry bruv, no GPS info is available for this image")
 
 def convert_to_lat_lng(coords):
-    pass
+    try:
+        lat_values = coords[0]
+        lon_values = coords[1]
+
+        dlat = lat_values[0] + (lat_values[1] / 60.0) + (lat_values[1] / 3600.0)
+        dlon = lon_values[0] + (lon_values[1] / 60.0) + (lon_values[1] / 3600.0)
+
+        return dlat, dlon
+    except:
+        print("No coordinates to convert, sorry bruv")
 
 def launch_map():
     pass
