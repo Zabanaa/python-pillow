@@ -1,5 +1,6 @@
 from PIL import Image
 from PIL.ExifTags import TAGS
+import json
 
 def open_image(path):
     img = Image.open(path)
@@ -46,6 +47,3 @@ def convert_to_lat_lng(coords):
         return dlat, dlon
     except:
         print("No coordinates to convert, sorry bruv")
-
-def launch_map():
-    pass
