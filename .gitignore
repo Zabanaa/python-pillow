@@ -1,4 +1,5 @@
 .Python
+*.json
 *.pyc
 *.jpg
 lib
