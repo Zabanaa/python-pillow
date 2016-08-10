@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
 
-    name="locate_me",
-    version="0.0.2a",
+    name="locateme",
+    version="0.0.3a",
     description="Python CLI tool that returns hidden GPS coordinates from photos and locates it on a google map",
     url="https://github.com/Zabanaa/locate-me",
     author="Karim Cheurfi",
@@ -17,10 +17,10 @@ setup(
     ],
     keywords="exif data gps info google maps",
     packages=find_packages(exclude=['docs', 'tests*']),
-    install_requires=['requests', 'googlemaps'],
+    install_requires=['requests', 'googlemaps', 'pillow'],
     entry_points={
         'console_scripts': [
-            'locate_me=locate_me:main'
+            'locateme=locateme:main'
         ]
     }
 )
