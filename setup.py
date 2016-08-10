@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
 
     name="locate_me",
-    version="0.0.1a",
+    version="0.0.2a",
     description="Python CLI tool that returns hidden GPS coordinates from photos and locates it on a google map",
     url="https://github.com/Zabanaa/locate-me",
     author="Karim Cheurfi",
