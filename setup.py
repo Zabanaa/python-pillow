@@ -20,7 +20,7 @@ setup(
     install_requires=['requests', 'googlemaps'],
     entry_points={
         'console_scripts': [
-            'locate_me=locate-me:main'
+            'locate_me=locate_me:main'
         ]
     }
 )
