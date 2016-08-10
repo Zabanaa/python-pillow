@@ -18,7 +18,7 @@ setup(
     keywords="exif data gps info google maps",
     packages=find_packages(exclude=['docs', 'tests*']),
     install_requires['requests', 'googlemaps'],
-    entry_points{
+    entry_points={
         'console_scripts': [
             'locate_me=locate-me:main'
         ]
