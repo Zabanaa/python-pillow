@@ -1,6 +1,6 @@
 import argparse
-from helpers import *
-from maps import *
+from .helpers import *
+from .maps import *
 
 parser = argparse.ArgumentParser(description="CLI Tool to extract geolocation data from images")
 parser.add_argument("image", help="The path to the image you want to parse")
