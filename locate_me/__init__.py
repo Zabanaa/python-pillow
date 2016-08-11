@@ -6,10 +6,10 @@ parser = argparse.ArgumentParser(description="CLI Tool to extract geolocation da
 parser.add_argument("image", help="The path to the image you want to parse")
 args = parser.parse_args()
 
-def main(args):
+def main(user_args):
 
     if args.image:
-        img = open_image(args.image)
+        img = open_image(user_args.image)
         data = get_exif_data(img)
         gps_info = get_gps_info(data)
         latlng = convert_to_lat_lng(gps_info)
